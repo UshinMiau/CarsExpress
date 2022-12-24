@@ -1,0 +1,18 @@
+{
+    "name": "cars/express",
+    "description": "P\u0000gina web feita para venda e compra de ve\u0000culos.",
+    "autoload": {
+        "psr-4": {
+            "APP\\": "src/"
+        },
+        "files": [
+            "config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Oliver Azazel Castro dos Santos"
+        }
+    ],
+    "require": {}
+}

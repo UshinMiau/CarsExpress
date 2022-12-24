@@ -1,0 +1,303 @@
+/* * PALETA DE CORES */
+
+:root {
+    --red-main: #DF4861;
+    --black-main: #252525;
+    --strong-red: #992236;
+    --strong-grey: #474747;
+    --weak-grey: #ecedf2;
+}
+
+/* * CLASSES REUTILIZÁVEIS */
+
+.container {
+    width: 100%;
+    padding: 0 4%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.element-shadow {
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgb(158 184 209 / 41%) 0px 2px 9px 0px;
+}
+
+.shadow-title {
+    color: var(--red-main);
+    text-shadow: 1px 1px var(--strong-red);
+    text-transform: uppercase;
+}
+
+.button-main {
+    background: var(--red-main);
+    border-radius: 11px;
+    box-shadow: 3px 3px var(--strong-red);
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-main:hover {
+    box-shadow: none;
+}
+
+/* * OVERLAY */
+
+.overlay {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 40px 4%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 99;
+}
+
+.overlay > section {
+    width: 100%;
+    max-width: 400px;
+    max-height: 90vh;
+    overflow-y: auto;
+    height: auto;
+    padding: 40px 4%;
+    position: relative;
+    box-shadow: rgba(0,0,0,.7) 0px 2px 9px 0px;
+}
+
+.overlay > section > i {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 25px;
+}
+
+.overlay > section form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.overlay > section h1 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.form-input-wrap {
+    margin-bottom: 20px;
+}
+
+.form-input-wrap > div {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.overlay > section label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.overlay > section input:not(input[type="submit"], input[type="checkbox"]), .overlay > section select, .overlay > section textarea{
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 1px solid var(--black-main);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.overlay > section input:not(input[type="submit"], input[type="checkbox"]), .overlay > section select {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 3%;
+}
+
+.overlay > section textarea {
+    line-height: 20px;
+    resize: vertical;
+    min-height: 100px;
+    padding: 8px 3%;
+}
+
+.overlay > section input[type="submit"] {
+    padding: 8px 25px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.overlay > section input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* * SECTION FORM-LOGIN */
+
+section.form-login p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+section.form-login a {
+    color: var(--strong-red);
+}
+
+article.form-login__sign-in {
+    display: flex;
+    flex-direction: column;
+}
+
+article.form-login__sign-up {
+    display: none;
+    flex-direction: column;
+}
+
+/* * SECTION PROFILE-DATA */
+
+section.profile-data {
+    text-align: center;
+}
+
+section.profile-data img {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+section.profile-data button {
+    padding: 5px 10px;
+}
+
+article.profile-data__data-list {
+    margin: 10px 0;
+}
+
+/* * SECTION ADD-VEHICLE */
+
+section.add-vehicle {
+    display: none;
+}
+
+/* * HEADER MENU */
+
+header.menu {
+    background-color: var(--black-main);
+}
+
+header.menu > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TODO: arrumar a img da logo pq ta com uma linha preta no canto direito */
+
+/* MENU DESKTOP */
+
+header.menu nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+article.menu__mobile-navigation-icon {
+    display: none;
+    font-size: 30px;
+    color: var(--red-main);
+    cursor: pointer;
+}
+
+header.menu nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header.menu nav li {
+    padding-left: 3%;
+}
+
+header.menu nav li a {
+    padding: 0px 3px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+header.menu nav li a:hover, nav.menu-mobile ul li a:hover {
+    border-bottom: 2.5px solid var(--strong-red);
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+
+header.menu nav ul li i, nav.menu-mobile ul li i {
+    font-size: 19px;
+    padding-right: 5px;
+}
+
+/* NAV MENU-MOBILE */
+
+nav.menu-mobile {
+    display: none;
+    background: var(--strong-grey);
+    color: white;
+    padding: 5px 0;
+}
+
+nav.menu-mobile ul li {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+article.menu__logo {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position: center center;
+    width: 170px;
+    height: 75px;
+}
+
+/* * MAIN */
+
+body > main {
+    padding: 30px 0;
+    background-color: var(--weak-grey);
+}
+
+/* * FOOTER */
+
+footer.site-end {
+    padding: 20px 0;
+    background-color: var(--black-main);
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+/* * MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    header.menu nav {
+        display: none;
+    }
+
+    article.menu__mobile-navigation-icon {
+        display: block;
+    }
+}

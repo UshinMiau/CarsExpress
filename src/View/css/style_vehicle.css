@@ -1,0 +1,120 @@
+/* * MAIN VEHICLE-DATA */
+
+main.vehicle-data > .container {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+/* SECTION VEHICLE-DATA__IMAGES */
+
+section.vehicle-data__images {
+    position: relative;
+    width: 100%;
+}
+
+section.vehicle-data__images button {
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0.7;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 1;
+}
+
+section.vehicle-data__images button:hover {
+    opacity: 1;
+}
+
+section.vehicle-data__images button.slick-prev {
+    left: 20px;
+}
+
+section.vehicle-data__images button.slick-next {
+    right: 20px;
+}
+
+article.vehicle-data__slider .slick-slide {
+    margin: 0 5px;
+}
+
+/* SECTION VEHICLE-DATA__DESCRIPTION */
+
+section.vehicle-data__description {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+section.vehicle-data__description h1 {
+    font-size: 30px;
+}
+
+section.vehicle-data__description h1, section.vehicle-data__description h2 {
+    text-align: center;
+}
+
+section.vehicle-data__description table {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+section.vehicle-data__description th, section.vehicle-data__description td{
+    width: 50%;
+    padding: 5px;
+}
+
+section.vehicle-data__description article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section.vehicle-data__description button {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+article.vehicle-data__seller-description p {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    main.vehicle-data > .container {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main.vehicle-data > .container {
+        margin-top: 10px;
+    }    
+
+    section.vehicle-data__images button {
+        display: none;
+    }
+}
